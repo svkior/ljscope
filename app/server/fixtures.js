@@ -2,7 +2,8 @@
  * Any sufficiently advanced technology is indistinguishable from magic. - Arthur C. Clarke
  */
 
-if(Posts.find().count() === 0) {
+/*
+ if(Posts.find().count() === 0) {
 
     var LiveJournal = Meteor.require("livejournal");
     var events = Async.runSync(function(done) {
@@ -22,3 +23,4 @@ if(Posts.find().count() === 0) {
 	    Posts.insert(event);
     });
 }
+ */
