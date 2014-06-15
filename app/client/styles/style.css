@@ -12,12 +12,17 @@ body {
 
 }
 
-.navbar { margin-bottom: 10px;}
+.navbar {
+    margin-bottom: 10px;
+}
+
 .navbar .navbar-inner {
     border-radius: 0px 0px 3px 3px
 }
 
-#spinner { height: 300px}
+#spinner {
+    height: 300px
+}
 
 .post {
     *zoom: 1;
@@ -35,15 +40,24 @@ body {
     display: table;
 }
 
-.post:after {clear: both}
-.post.invisible {opacity: 0}
+.post:after {
+    clear: both
+}
+
+.post.invisible {
+    opacity: 0
+}
+
 .post .upvote {
     display: block;
     margin: 7px 12px 0 0;
     float: left;
 }
 
-.post .post-content { float: left}
+.post .post-content {
+    float: left
+}
+
 .post .post-content h3 {
     margin: 0;
     line-height: 1.4;
@@ -64,7 +78,7 @@ body {
 }
 
 .post .post-content p {
-     margin: 10px;
+    margin: 10px;
 
 }
 
@@ -89,8 +103,14 @@ body {
     font-weight: normal;
 }
 
-.comments li h4 a {font-size: 12px}
-.commetns li p:last-child { margin-bottom: 0}
+.comments li h4 a {
+    font-size: 12px
+}
+
+.commetns li p:last-child {
+    margin-bottom: 0
+}
+
 .dropdown-menu span {
     display: block;
     padding: 3px 20px;
@@ -103,7 +123,7 @@ body {
 .load-more {
     display: block;
     border-radius: 3px;
-    background: rgba(0,0,0,0.05);
+    background: rgba(0, 0, 0, 0.05);
     text-align: center;
     height: 60px;
     line-height: 60px;
@@ -112,5 +132,5 @@ body {
 
 .load-more:hover {
     text-decoration: none;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.1);
 }

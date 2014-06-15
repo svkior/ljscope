@@ -1,6 +1,6 @@
-
-console.log(Posts.find().fetch());
-
+/*
+ * Any sufficiently advanced technology is indistinguishable from magic. - Arthur C. Clarke
+ */
 
 if(Posts.find().count() === 0) {
 
