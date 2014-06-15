@@ -1,13 +1,13 @@
 .grid-block, .main, .post, .comments li, .comment-form {
     background: #fff;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 
 body {
-    background: #eee;
+    background: #ddd;
     color: #666666;
 
 }
@@ -77,9 +77,24 @@ body {
 
 }
 
-.post .post-content p {
-    margin: 10px;
+.post .post-content .post-header .nickname {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 14px;
+}
 
+.post .post-content p {
+    margin: 20px;
+
+}
+
+.post .post-content .post-tags {
+    margin-top: 0px;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #2020ee;
 }
 
 .post .discuss {
@@ -134,3 +149,9 @@ body {
     text-decoration: none;
     background: rgba(0, 0, 0, 0.1);
 }
+
+.user-info {
+    float: left;
+    margin-right: 10px;
+}
+

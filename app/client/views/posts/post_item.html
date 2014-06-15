@@ -1,9 +1,40 @@
 <template name="postItem">
     <div class="post">
 	<div class="post-content">
-        <h3><a href="{{url}}">{{{subject}}}</a><span>{{domain}}</span></h3>
+        <div class="user-info">
+            <img src="{{user_image}}" width="70" height="70"/>
+        </div>
+        <div class="post-header">
+            <span class="nickname"> {{nickname}} ({{poster_ip}})
+                {{#if reposted}}
+                Repost from: <a href="{{repost_url}}" target="_blank">{{repost_author}}</a>
+                {{/if}}
 
-        <p>{{{processed_event}}}</p>
+            </span>
+
+            <h3>
+                <a href="{{url}}" target="_blank">{{{subject}}}</a><span>{{domain}}</span></h3>
+
+            <p class="post-tags">
+                {{post_tags}}
+            </p>
+        </div>
+        <p>
+            {{#if need2render_post}}
+            <a href="#" class="close-post btn">Свернуть</a>
+            <a href="{{pathFor 'postPage'}}" class="discuss btn">Обсудить</a>
+        <hr/>
+        {{{rendered_post}}}
+        <hr/>
+        <a href="#" class="close-post btn">Свернуть</a>
+        <a href="{{pathFor 'postPage'}}" class="discuss btn">Обсудить</a>
+        {{else}}
+        <a href="#" class="read-more btn">Прочитать пост</a>
+        <a href="{{pathFor 'postPage'}}" class="discuss btn">Обсудить</a>
+        {{/if}}
+        </p>
+        <!--<p>{{{rendered_post}}}</p>-->
+
 	</div>
     </div>
 </template>
