@@ -1,7 +1,8 @@
 {
-    "packages": {
-        "npm": {},
-        "iron-router": {},
-        "spin": {}
-    }
+  "packages": {
+    "npm": {},
+    "iron-router": {},
+    "spin": {},
+    "accounts-ui-bootstrap-dropdown": {}
+  }
 }
