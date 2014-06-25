@@ -9,7 +9,7 @@ Template.postItem.helpers({
     },
     need2render_post: function () {
         return   Session.equals('readPost', this._id);
-    },JJ
+    },
     rendered_post: function () {
         if (Session.equals('readPost', this._id)) {
             var post = this.lj.event;
